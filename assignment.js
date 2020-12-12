@@ -40,3 +40,25 @@ function brickCalculator (story){
 var result = brickCalculator(35);
 
 console.log(result);
+
+
+var friends = ["mom", "rezu", "protik", "shoyebz"];
+
+
+
+function tinyFriends (friends){
+    
+    var tiny = friends[0];
+        for (var i = 0; i< friends.length; i++){
+        var element = friends[i];
+        if(element.length< tiny.length){
+        tiny = element;
+        }
+        return tiny;
+        }
+    }
+
+
+    var result = tinyFriends(friends);
+
+    console.log(result);
